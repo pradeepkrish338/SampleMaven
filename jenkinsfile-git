@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    }
+    stages{
+        stage("Git Checkout"){
+            steps{
+               git credentialsId: 'c75219ab-0850-42c7-9e53-38501a7946a4', url: 'https://github.com/pradeepkrish338/SampleMaven/'
+            }
+        }
+      }
+   } 
